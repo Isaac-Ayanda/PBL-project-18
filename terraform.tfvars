@@ -18,16 +18,17 @@ environment = "dev"
 
 ami = "ami-09e67e426f25ce0d7"
 
-keypair = "devops"
+keypair = "Isaac"
 
 master-password = "devopspblproject"
 
-master-username = "david"
+master-username = "isaac"
 
-account_no = "696742900004"
+account_no = "998967442543"
 
 tags = {
-  Owner-Email     = "infradev-segun@darey.io"
+  Enviroment      = "production"
+  Owner-Email     = "isaacayanda@gmail.com"
   Managed-By      = "Terraform"
   Billing-Account = "1234567890"
 }
