@@ -1,5 +1,5 @@
 variable "region" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -34,7 +34,7 @@ variable "preferred_number_of_private_subnets" {
 
 variable "name" {
   type    = string
-  default = "ACS"
+  default = "mtrone"
 
 }
 
