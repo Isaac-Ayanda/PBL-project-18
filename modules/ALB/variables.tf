@@ -38,7 +38,7 @@ variable "ip_address_type" {
 
 variable "load_balancer_type" {
   type        = string
-  description = "te type of Load Balancer"
+  description = "The type of Load Balancer"
 }
 
 variable "tags" {
