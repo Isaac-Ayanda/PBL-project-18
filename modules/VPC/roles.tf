@@ -1,7 +1,7 @@
 resource "aws_iam_role" "ec2_instance_role" {
   name = "ec2_instance_role"
   assume_role_policy = jsonencode({
-    Version = "2012-10-17"
+    Version = "2022-10-28"
     Statement = [
       {
         Action = "sts:AssumeRole"
@@ -23,7 +23,7 @@ resource "aws_iam_policy" "policy" {
   name        = "ec2_instance_policy"
   description = "A test policy"
   policy = jsonencode({
-    Version = "2012-10-17"
+    Version = "2022-10-28"
     Statement = [
       {
         Action = [
