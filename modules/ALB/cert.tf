@@ -1,6 +1,6 @@
 # The entire section create a certiface, public zone, and validate the certificate using DNS method
 
-# Create the certificate using a wildcard for all the domains created in oyindamola.gq
+# Create the certificate using a wildcard for all the domains created in mtrone.ml
 resource "aws_acm_certificate" "mtrone" {
   domain_name       = "*.mtrone.ml"
   validation_method = "DNS"
@@ -32,7 +32,7 @@ resource "aws_route53_record" "mtrone" {
 
 # validate the certificate through DNS method
 resource "aws_acm_certificate_validation" "mtrone" {
-  certificate_arn         = aws_acm_certificate.oyindamola.arn
+  certificate_arn         = aws_acm_certificate.mtrone.arn
   validation_record_fqdns = [for record in aws_route53_record.mtrone : record.fqdn]
 }
 
