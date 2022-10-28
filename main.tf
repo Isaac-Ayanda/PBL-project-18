@@ -49,7 +49,7 @@ module "VPC" {
 #Module for Application Load balancer, this will create Extenal Load balancer and internal load balancer
 module "ALB" {
   source             = "./modules/ALB"
-  name               = "ACS-ext-alb"
+  name               = "mtrone-ext-alb"
   vpc_id             = module.VPC.vpc_id
   public-sg          = module.security.ALB-sg
   private-sg         = module.security.IALB-sg
