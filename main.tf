@@ -3,7 +3,7 @@
 #########################
 
 resource "aws_s3_bucket" "terraform-state" {
-  bucket = "isaac-dev-terraform-bucket"
+  bucket        = "isaac-dev-terraform-bucket"
   force_destroy = true
 }
 resource "aws_s3_bucket_versioning" "version" {
