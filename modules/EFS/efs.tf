@@ -3,7 +3,7 @@ resource "aws_kms_key" "mtrone-kms" {
   description = "KMS key "
   policy      = <<EOF
   {
-  "Version": "2022-10-28",
+  "Version": "2012-10-17",
   "Id": "kms-key-policy",
   "Statement": [
     {
